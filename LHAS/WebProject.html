@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Lecture Hall Allocating System SUSL</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <nav class="navbar-one flex">
+                <div class="right"></div>
+                <div class="Student">
+                <span onclick="redirectToStudentPage()"> Student </span>
+                </div>
+                   
+                    <div class="Lecturer">
+                        <span onclick="redirectToLecturerPage()"> Lecturer </span>
+                    
+                     </div>
+                     <div class="Staff">
+                    <span onclick="redirectToStaffPage()"> Staff </span>
+                    
+                     </div>
+            </nav>
+            <script>
+                function redirectToStudentPage() {
+        window.location.href = "Student.html"; // Replace with the URL of the student page
+    }
+
+    function redirectToLecturerPage() {
+        window.location.href = "Lecturer.html"; // Replace with the URL of the lecturer page
+    }
+                function redirectToStaffPage() {
+        window.location.href = "Staff.html"; // Replace with the URL of the staff page
+    }
+            </script>
+           
+            <nav class="navbar-two ">
+                <div class="logo">
+                    <img src= " https://www.sab.ac.lk/app/icas/assets/images/SUSL.png" alt="Logo image">
+                    
+                </div>
+                <div>
+                    <h3 > Sabaragamuwa </h3> <br> <h4>University of Sri Lanka </h4></div>
+                    <h2 >
+                       <b> Lecture Hall Allocating System </b>
+                    </h2>
+                
+            </nav>
+        </div>
+
+        
+           
+            <div id="image-container" style="width: 100vw; height: 100vh; overflow: hidden;">
+                <!-- Images will be loaded dynamically here -->
+            </div>
+            <footer>
+                <div class="footer-content">
+                    <!-- Footer content goes here -->
+                    <p>Copyright © 2024 Your Website. All rights reserved.</p>
+                    <p>Contact: info@example.com</p>
+                    <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+                </div>
+            </footer>
+            <script>
+                // Array of image URLs
+                var images = [
+                    "https://www.sab.ac.lk/app/sites/default/files/gallery-article/11_1.jpg",
+                    "https://www.sab.ac.lk/computing/sites/default/files/gallery-article/2022-ICARC-Inauguration/AVU4436.jpg"
+                    // Add more image URLs as needed
+                ];
+            
+                // Function to display a random image
+                function displayRandomImage() {
+                    // Generate a random index to select a random image from the array
+                    var randomIndex = Math.floor(Math.random() * images.length);
+            
+                    // Create an img element
+                    var imgElement = document.createElement("img");
+            
+                    // Set the src attribute of the img element to the randomly selected image URL
+                    imgElement.src = images[randomIndex];
+                    imgElement.style.width = "100%";
+                    imgElement.style.height = "auto";
+                
+            
+                    // Get the container element where the image will be displayed
+                    var imageContainer = document.getElementById("image-container");
+            
+                    // Clear any previously displayed image
+                    imageContainer.innerHTML = "";
+            
+                    // Append the img element to the container
+                    imageContainer.appendChild(imgElement);
+                }
+            
+                // Call the function to display a random image initially
+                displayRandomImage();
+            
+                // Call the function to display a random image every 5 seconds
+                setInterval(displayRandomImage, 1000); // Change 5000 to the desired interval in milliseconds
+            </script>
+           
+        </body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,48 @@
+.SearchBar {
+  position: absolute;
+  top: auto;
+  right: 100px;
+  width: 100px;
+}
+.button {
+  margin-left: 50px;
+  display: block;
+  margin-bottom: 10px; /* Add space between buttons */}
+  .button {
+    background-color:  rgb(65, 61, 61);/* Set initial background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Set padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add smooth transition effect */
+    width: 300px;
+    margin-top: 30px ;
+}
+
+.button:hover {
+    background-color: #520103; /* Change background color on hover */
+}
+
+/*.button.clicked {
+    background-color: maroon; /* Change background color when clicked */
+   .LImage img{
+    width: 60%;
+    height: 80%;
+    margin-left: 100px;
+    margin-top: 50px;
+
+   }
+   .container {
+    display: flex;
+    align-items: center;
+}
+
+.button-container {
+    flex: 1;
+    padding: 0 20px; /* Adjust as needed */
+}
+
+.LImage img {
+    max-width: 100%;
+    height: auto;
+}

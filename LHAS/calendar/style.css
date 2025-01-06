@@ -1,0 +1,149 @@
+style{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    font-family: -apple-system
+   
+}
+body{
+    overflow-x: hidden;
+}
+
+nav{
+padding:  0 50px;
+width: 100%;
+
+}
+.flex{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-right: auto;
+   
+}
+.navbar-one{
+    background-color: #300303  ;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.Student{
+    margin-left:500px ;
+}
+.Student :hover,
+.Lecturer:hover,
+.Staff:hover{
+    color: yellow;
+    transition: all 0.5s;
+    
+
+}
+
+.navbar-two {
+    height: 110px;
+    background-color: #520103;
+    color: white;
+    display: flex; /* Use flexbox to align elements horizontally */
+    align-items: center; /* Vertically center the items */
+}
+
+.logo {
+   
+    margin-top: 0px; /* Pushes the logo to the left */
+    margin-left: auto;
+    margin-right: auto;
+   
+
+}
+
+.logo img {
+    padding-top: 10px;
+    height: 80px; /* Adjust the height of the logo as needed */
+    width: 80px;
+    padding-bottom: 10px;
+    
+}
+
+h3{
+     /* Reset margin to remove any default spacing */
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    letter-spacing: 2.5px;
+padding-bottom: 0px;}
+    
+ h4 {
+    /* Reset margin to remove any default spacing */
+    padding-top: 0px;
+    line-height: 1px;
+    margin-top: 0px;
+   margin-left: 30px;
+}
+
+.navbar-two h2 {
+    font-size: 32px;
+   
+    text-align: center; /* Center-align the text */
+    margin-left: 400px; /* Reset margin to remove any default spacing */
+    
+    flex-grow: 1; /* Allow the title to expand and occupy available space */
+    letter-spacing: 2.5px;
+    word-spacing: 5.5px;}
+    #image-container {
+        /* Add margin to create space for the footer */
+        margin-bottom: 100px; /* Adjust this value based on the footer height */
+    }
+
+    footer {
+        background-color: #520103;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto%;
+        
+    }
+
+
+    .max-capacity {
+        margin: 20px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .capacity-number {
+        background-color: white;
+        color: black; /* Change the text color if needed */
+        padding: 5px;
+        border-radius: 3px;
+    }    
+
+
+
+   
+
+
+
+
+
+
+
+
+
+  

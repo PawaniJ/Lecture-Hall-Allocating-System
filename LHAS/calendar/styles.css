@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.timetable-container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable th,
+.timetable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.timetable th {
+    background-color: #f2f2f2;
+}
+
+.timetable td {
+    background-color: #fff;
+}
+
+.timetable td:first-child {
+    font-weight: bold;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    .timetable th,
+    .timetable td {
+        padding: 6px;
+    }
+}

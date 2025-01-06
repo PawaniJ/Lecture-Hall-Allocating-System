@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Lecture Hall Allocating System SUSL</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel ="stylesheet" href="imgStyles.css">
+        <link rel ="stylesheet" href="fStyle.css">
+
+    </head>
+        <body>
+           
+            <nav class="navbar-one flex">
+                <div class="right"></div>
+                <div class="Student">
+                <span style="color: white;" > Student </span>
+                </div>
+                   
+                   
+                   
+                    <div class="Lecturer">
+                        <span style="color: yellow;"> Lecturer </span>
+                    
+                     </div>
+                     <div class="Staff">
+                    <span style="color: white;"> Staff </span>
+                    
+                     </div>
+            </nav>
+            <nav class="navbar-two ">
+                <div class="logo">
+                    <img src= " https://www.sab.ac.lk/app/icas/assets/images/SUSL.png" alt="Logo image">
+                    
+                </div>
+                <div>
+                    <h3 > Sabaragamuwa </h3> <br> <h4>University of Sri Lanka </h4></div>
+                    <h2 >
+                       <b> Lecture Hall Allocating System </b>
+                    </h2>
+                
+            </nav>
+        </div>
+        <div>
+            <h3 style="letter-spacing: normal; color: #520103;" >
+               <b> Lecturer Potral </b> 
+            </h3>
+        </div>
+        <div class="fName">
+            Facylty of Computing
+        </div>
+        <div class="HName">
+            <h2 style="letter-spacing: normal; color: #520103; margin-left: 100px; margin-top: 80px;" >
+                <b> Z9</b> 
+             </h2>
+        </div>
+        <div class="Box" style="background-color: #520103; width: auto; height: 20%; ">
+            <div style=" font-size: 24px; color: white;margin-left: 600px;"> 2024.04.08-2024.04.13</div>
+       </div>
+        <div class="Box" style="background-color: #520103; width: auto; height: 100%;">
+            <div class="timetable" >
+                <table border="1" style="background-color: white; margin-left: 250px;width: 1000px;height: 400px;">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Fridayday</th>
+                        </tr>
+                        <tr>
+                            <td>8.00</td>
+                            <td id="color1"></td>
+                            <td style="background-color: red;"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9.00</td>
+                            <td></td>
+                            <td></td>
+                            <td id="color2"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5.00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="inputbtn" style="color: white; margin-left: 250px; margin-top: 80px;">
+                <input type="text" name="" id="" class="clear" >
+        
+                <button onclick="test()" >Date</button>
+                <div class="inputbtn" >
+                    <input type="text" name="" id="" class="clear" >
+            
+                    <button onclick="test()" >Time</button>
+                    <div class="inputbtn" >
+                        <input type="text" name="" id="" class="clear" >
+                
+                        <button onclick="test()" >Duration</button>
+                        <div class="inputbtn">
+                            <input type="text" name="" id="" class="clear" >
+                    
+                            <button onclick="test()" >Submit</button>
+                        </div>
+                <script>
+                    let count = 0;
+                    const elm1 = document.getElementById("color1");
+                    const elm2 = document.getElementById("color2");
+                    const inputs = document.getElementsByClassName("clear");
+            
+                    function test() {
+                        if (count == 0) {
+                            elm1.style.backgroundColor = "green";
+                        } else if (count == 1) {
+                            elm2.style.backgroundColor = "green";
+                        }
+                        count++;
+            
+                        for (let a = 0; a < inputs.length; a++) {
+                            let inp = inputs[a];
+                            inp.value = "";
+                        }
+                    }
+                </script>
+            </div>
+             </div>
+
+            
+            
+        
+            
+
+    </body>
+    </html>
